@@ -12,6 +12,7 @@ body {
 .header-top .container {
     padding-left: 35px;
     padding-right: 100px;
+    padding-bottom: 5px;
 }
 
 /* Header Styles */
