@@ -274,11 +274,29 @@ img.logo_width {
 .slider-btn:active {
     transform: scale(0.95);
 }
+.product-carousel {
+    background: #fff;
+    padding: 40px 35px 0px 20px;
+    border-radius: 10px;
+}
+section.products .owl-dots {
+    display: none;
+}
+section.products .owl-dots {
+    display: none;
+}
 
+section.products .owl-nav {
+    display: none;
+}
+section.products .owl-nav {
+    display: none;
+}
 /* Products Section */
+
 .products {
-    padding: 60px 0;
-    background: #f8f9fa;
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f3f5f4 50%, #ffffff 50%);
 }
 
 .product-carousel {
