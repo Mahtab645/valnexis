@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALNEXIS ENGINEERING - Smart Engineering. Smart Valves.</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Poppins Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -14,27 +20,41 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="images/logo-icon.png" alt="Valnexis Logo" class="logo-icon">
-                    <span class="logo-text">VALNEXIS ENGINEERING</span>
-                </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="#" class="active">HOME</a></li>
-                        <li><a href="#">VALNEXIS</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </nav>
-                <div class="header-contact">
-                    <div class="contact-info">
-                        <span><i class="fas fa-phone"></i> Call: 090827 83860</span>
-                        <span><i class="fas fa-envelope"></i> Email: sales@valnexis.in</span>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 logo-icon-section">
+                        <img src="images/logo-icon.png" alt="Valnexis Logo" class="logo-icon">
                     </div>
-                    <button class="brochure-btn">BROCHURE</button>
+                    <div class="col-md-4 logo-text-section">
+                        <span class="logo-text">VALNEXIS ENGINEERING</span>
+                    </div>
+                    <div class="col-md-6 contact-section">
+                        <div class="contact-info">
+                            <span><i class="fas fa-phone"></i> Call: 090827 83860</span>
+                            <span><i class="fas fa-envelope"></i> Email: sales@valnexis.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 menu-section">
+                        <nav class="nav-menu">
+                            <ul class="navbar-nav">
+                                <li><a href="#" class="active">HOME</a></li>
+                                <li><a href="#">VALNEXIS</a></li>
+                                <li><a href="#">PRODUCTS</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 brochure-section">
+                        <button class="brochure-btn">BROCHURE</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,7 +62,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
+        <div class="container-fluid">
             <div class="hero-slider">
                 <div class="hero-slide active" data-bg="images/home-banner-cement-plant.jpg">
                     <div class="hero-content-wrapper">
@@ -66,7 +86,10 @@
                     <div class="hero-content-wrapper">
                         <div class="hero-overlay">
                             <div class="hero-content">
-                                <h1>VALNEXIS</h1>
+                                <div class="valnexis-logo">
+                                    <div class="orange-line"></div>
+                                    <h1>VALNEXIS</h1>
+                                </div>
                                 <p>Precision Engineering Solutions</p>
                             </div>
                         </div>
@@ -81,7 +104,10 @@
                     <div class="hero-content-wrapper">
                         <div class="hero-overlay">
                             <div class="hero-content">
-                                <h1>VALNEXIS</h1>
+                                <div class="valnexis-logo">
+                                    <div class="orange-line"></div>
+                                    <h1>VALNEXIS</h1>
+                                </div>
                                 <p>Industrial Valve Excellence</p>
                             </div>
                         </div>
@@ -96,7 +122,10 @@
                     <div class="hero-content-wrapper">
                         <div class="hero-overlay">
                             <div class="hero-content">
-                                <h1>VALNEXIS</h1>
+                                <div class="valnexis-logo">
+                                    <div class="orange-line"></div>
+                                    <h1>VALNEXIS</h1>
+                                </div>
                                 <p>Power Generation Solutions</p>
                             </div>
                         </div>
@@ -111,7 +140,10 @@
                     <div class="hero-content-wrapper">
                         <div class="hero-overlay">
                             <div class="hero-content">
-                                <h1>VALNEXIS</h1>
+                                <div class="valnexis-logo">
+                                    <div class="orange-line"></div>
+                                    <h1>VALNEXIS</h1>
+                                </div>
                                 <p>Refinery & Processing Systems</p>
                             </div>
                         </div>
@@ -137,30 +169,42 @@
     <!-- Products Section -->
     <section class="products">
         <div class="container">
-            <div class="product-carousel owl-carousel owl-theme">
-                <div class="product-card">
-                    <img src="images/1.png" alt="Product 1">
-                    <h3>Product Name</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <img src="images/1.png" alt="Product 1" class="img-fluid">
+                        <h3>Product Name</h3>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="images/2.png" alt="Product 2">
-                    <h3>Product Name</h3>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <img src="images/2.png" alt="Product 2" class="img-fluid">
+                        <h3>Product Name</h3>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="images/3.png" alt="Product 3">
-                    <h3>Product Name</h3>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <img src="images/3.png" alt="Product 3" class="img-fluid">
+                        <h3>Product Name</h3>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="images/4.png" alt="Product 4">
-                    <h3>Product Name</h3>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <img src="images/4.png" alt="Product 4" class="img-fluid">
+                        <h3>Product Name</h3>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="images/5.png" alt="Product 5">
-                    <h3>Product Name</h3>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <img src="images/5.png" alt="Product 5" class="img-fluid">
+                        <h3>Product Name</h3>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="images/6.png" alt="Product 6">
-                    <h3>Product Name</h3>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <img src="images/6.png" alt="Product 6" class="img-fluid">
+                        <h3>Product Name</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,14 +213,18 @@
     <!-- Welcome Section -->
     <section class="welcome">
         <div class="container">
-            <div class="welcome-content">
-                <div class="welcome-image">
-                    <img src="images/6.png" alt="Valnexis Valve">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="welcome-image">
+                        <img src="images/6.png" alt="Valnexis Valve" class="img-fluid">
+                    </div>
                 </div>
-                <div class="welcome-text">
-                    <h2>Welcome to Valnexis Engineering</h2>
-                    <p>Valnexis is a family-owned enterprise with over 25 years of expertise in manufacturing valves and engineering products. The company is led by seasoned professionals with more than two decades of experience in the engineering industry. Headquartered in Mumbai, the financial capital of India, Valnexis benefits from its strategic location and strong industry presence. As a trusted partner to renowned OEMs and first-tier suppliers, the company continues to deliver precision, reliability, and innovation in engineering solutions.</p>
-                    <button class="read-more-btn">READ MORE</button>
+                <div class="col-lg-6 col-md-12">
+                    <div class="welcome-text">
+                        <h2>Welcome to Valnexis Engineering</h2>
+                        <p>Valnexis is a family-owned enterprise with over 25 years of expertise in manufacturing valves and engineering products. The company is led by seasoned professionals with more than two decades of experience in the engineering industry. Headquartered in Mumbai, the financial capital of India, Valnexis benefits from its strategic location and strong industry presence. As a trusted partner to renowned OEMs and first-tier suppliers, the company continues to deliver precision, reliability, and innovation in engineering solutions.</p>
+                        <button class="read-more-btn">READ MORE</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,22 +234,30 @@
     <section class="why-valnexis">
         <div class="container">
             <h2>Why Valnexis Valves</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <img src="images/customer-first.png" alt="Customer First">
-                    <h3>Customer First</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <img src="images/customer-first.png" alt="Customer First" class="img-fluid">
+                        <h3>Customer First</h3>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <img src="images/quality-products.png" alt="Quality Products">
-                    <h3>Quality Products</h3>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <img src="images/quality-products.png" alt="Quality Products" class="img-fluid">
+                        <h3>Quality Products</h3>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <img src="images/professional-team.png" alt="Professional Team">
-                    <h3>Professional Team</h3>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <img src="images/professional-team.png" alt="Professional Team" class="img-fluid">
+                        <h3>Professional Team</h3>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <img src="images/on-time-delivery.png" alt="On-time Delivery">
-                    <h3>On-time Delivery</h3>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <img src="images/on-time-delivery.png" alt="On-time Delivery" class="img-fluid">
+                        <h3>On-time Delivery</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,12 +267,22 @@
     <section class="customers">
         <div class="container">
             <h2>Our Customers</h2>
-            <div class="customers-grid">
-                <div class="customer-logo">Customer Logo</div>
-                <div class="customer-logo">Customer Logo</div>
-                <div class="customer-logo">Customer Logo</div>
-                <div class="customer-logo">Customer Logo</div>
-                <div class="customer-logo">Customer Logo</div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="customer-logo">Customer Logo</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="customer-logo">Customer Logo</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="customer-logo">Customer Logo</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="customer-logo">Customer Logo</div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="customer-logo">Customer Logo</div>
+                </div>
             </div>
         </div>
     </section>
@@ -225,43 +291,51 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-left">
-                    <div class="footer-logo">
-                        <img src="images/logo-icon.png" alt="Valnexis Logo">
-                        <div class="footer-logo-text">
-                            <h3>VALNEXIS</h3>
-                            <p>Engineered to Perform. Trusted to Deliver.</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-logo">
+                            <img src="images/logo-icon.png" alt="Valnexis Logo" class="img-fluid mb-3">
+                            <div class="footer-logo-text">
+                                <h3>VALNEXIS</h3>
+                                <p>Engineered to Perform. Trusted to Deliver.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer-center">
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">PRODUCTS</a></li>
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                        </ul>
-                    </nav>
-                    <div class="footer-contact">
-                        <p>Call: 090827 83860 | Email: sales@valnexis.in</p>
+                    <div class="col-lg-4 col-md-12">
+                        <nav class="footer-nav">
+                            <ul class="list-unstyled">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">PRODUCTS</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer-contact">
+                            <p>Call: 090827 83860 | Email: sales@valnexis.in</p>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="images/icon-insta.png" alt="Instagram"></a>
-                        <a href="#"><img src="images/icon-whatsapp.png" alt="WhatsApp"></a>
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+                            <a href="#" class="me-3"><img src="images/icon-insta.png" alt="Instagram"></a></li>
+                            <a href="#" class="me-3"><img src="images/icon-whatsapp.png" alt="WhatsApp"></a></li>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© Copyright 2026. All rights reserved, | Powered by Maptek</p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>© Copyright 2026. All rights reserved, | Powered by Maptek</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Owl Carousel JS -->

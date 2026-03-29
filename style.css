@@ -10,10 +10,11 @@ body {
     color: #333;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* Header Styles */
@@ -25,65 +26,101 @@ body {
     z-index: 1000;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header-top {
+    background: #ff6b35;
     padding: 15px 0;
 }
 
-.logo-section {
+.logo-icon-section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.logo-text-section {
+    display: flex;
+    align-items: center;
 }
 
 .logo-text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    color: #333;
+    color: white;
+    text-transform: uppercase;
 }
 
-.nav-menu ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
-    color: #ff6b35;
-}
-
-.header-contact {
+.contact-section {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-end;
 }
 
 .contact-info {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 12px;
+    gap: 20px;
+    align-items: center;
 }
 
 .contact-info span {
+    color: white;
+    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.header-bottom {
+    background: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.navbar-nav li {
+    display: inline-block;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a.active {
+    color: #ff6b35;
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.brochure-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .brochure-btn {
@@ -94,7 +131,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
+    font-size: 14px;
     transition: background 0.3s;
+    text-transform: uppercase;
 }
 
 .brochure-btn:hover {
