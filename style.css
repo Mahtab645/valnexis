@@ -292,6 +292,63 @@ section.products .owl-nav {
 section.products .owl-nav {
     display: none;
 }
+/* Section Heading Styles */
+.section-heading {
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+    padding: 15px 0;
+}
+
+.section-heading h2 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+.welcome_heading::before {
+    width: 41% !important;
+    left: 78% !important;
+}
+.welcome_heading h2 {
+    text-align: end;
+    padding-right: 64px;
+}
+.welcome_heading {
+        top: -60px;
+}
+.section-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) skew(-30deg);
+    width: 32%;
+    height: 100%;
+    background: #012e58;
+    z-index: 1;
+}
+.why_heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 100%;
+}
+.heading-line {
+    width: 80px;
+    height: 4px;
+    background: #ff6b35;
+    margin: 15px auto 0;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+}
+
 /* Products Section */
 
 .products {
@@ -427,10 +484,10 @@ section.products .owl-nav {
 }
 
 /* Welcome Section */
-.welcome {
-    padding: 80px 0;
-}
 
+.welcome {
+    padding: 30px 0px 120px 0px;
+}
 .welcome-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -439,10 +496,11 @@ section.products .owl-nav {
 }
 
 .welcome-image img {
-    width: 100%;
+       width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 33px;
 }
 
 .welcome-text h2 {
@@ -451,43 +509,50 @@ section.products .owl-nav {
     margin-bottom: 20px;
     font-weight: 700;
 }
-
+.welcome-text {
+    padding-left: 50px;
+}
 .welcome-text p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #666;
+font-size: 16px;
+    line-height: 32px;
+    color: #000;
     margin-bottom: 30px;
 }
 
 .read-more-btn {
-    background: #ff6b35;
-    color: white;
+       background: transparent;
+    color: #1c2c60;
     border: none;
     padding: 12px 30px;
-    border-radius: 5px;
+    border: 1px solid;
+    border-radius: 0px 9px 0px 10px;
     cursor: pointer;
     font-weight: 500;
-    transition: background 0.3s;
 }
 
 .read-more-btn:hover {
-    background: #e55a2b;
+    background: #1c2c60;
+    color: #fff;
 }
 
 /* Why Valnexis Section */
 .why-valnexis {
-    padding: 60px 0;
     background: #fff;
 }
 
 .why-valnexis h2 {
     text-align: center;
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 50px;
-    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding-left: 85px;
+    padding-bottom: 0;
 }
-
+.why_heading {
+    width: 33%;
+    top:-60px;
+}
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -498,7 +563,10 @@ section.products .owl-nav {
     text-align: center;
 }
 
-
+.why-valnexis {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
 .feature-card img {
     width: 120px;
     height: 120px;
@@ -523,13 +591,20 @@ section.products .owl-nav {
 }
 
 .customers h2 {
-    text-align: center;
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 50px;
-    font-weight: 700;
+     text-align: center;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding-bottom: 0;
 }
-
+.customers {
+    padding: 31px 0px 40px 0px;
+    background: #f3f5f4;
+}
+.our_customer_head {
+    top: -60px;
+}
 .customers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -662,7 +737,9 @@ section.products .owl-nav {
     color: #b8d4f1;
     font-size: 14px;
 }
-
+section.customers .col-lg-2.col-md-4.col-sm-6.mb-4 {
+    width: 20%;
+}
 /* Responsive Footer */
 @media (max-width: 768px) {
     .footer-content {
