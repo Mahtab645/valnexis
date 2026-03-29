@@ -299,28 +299,31 @@ img.logo_width {
 }
 
 .product-card {
-    background: white;
+    background: #ebedec;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     padding: 20px;
     cursor: pointer;
     width: 100%;
-    max-width: 280px;
+    border: 2px solid #cccccc99;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+.poduct_boxex_main {
+    width: 100%;
 }
 
+.poduct_boxex_main h3 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+}
 .product-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: contain;
-    margin-bottom: 15px;
 }
 
 .product-card h3 {
@@ -456,7 +459,7 @@ img.logo_width {
 /* Why Valnexis Section */
 .why-valnexis {
     padding: 60px 0;
-    background: #f8f9fa;
+    background: #fff;
 }
 
 .why-valnexis h2 {
@@ -475,32 +478,30 @@ img.logo_width {
 
 .feature-card {
     text-align: center;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
-}
 
 .feature-card img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 20px;
 }
 
 .feature-card h3 {
-    font-size: 18px;
-    color: #333;
-    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
 }
 
 /* Customers Section */
 .customers {
-    padding: 60px 0;
+    padding: 80px 0;
+    background: #f3f5f4;
+}
+
+.welcome
+ {
+    background: #f3f5f4;
 }
 
 .customers h2 {
