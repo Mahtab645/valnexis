@@ -37,9 +37,7 @@ $(document).ready(function() {
             }
         }
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
     // Hero Slider Functionality
     const slides = document.querySelectorAll('.hero-slide');
     const prevBtn = document.querySelector('.prev-btn');
@@ -53,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const bgImage = slide.getAttribute('data-bg');
             if (bgImage) {
                 slide.style.backgroundImage = `url('${bgImage}')`;
+                console.log(`Setting background for slide ${index}: ${bgImage}`);
             }
         });
         

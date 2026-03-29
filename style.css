@@ -122,12 +122,18 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 .hero-slide.active {
     opacity: 1;
+}
+
+/* Fallback background for hero section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .hero-content-wrapper {
