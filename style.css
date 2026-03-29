@@ -352,7 +352,7 @@ section.products .owl-nav {
 /* Products Section */
 
 .products {
-    padding: 80px 0;
+        padding: 80px 0 100px 0px;
     background: linear-gradient(to bottom, #f3f5f4 50%, #ffffff 50%);
 }
 
@@ -653,9 +653,7 @@ font-size: 16px;
 }
 
 .footer-logo img {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
+    width: 100%;
 }
 
 .footer-logo-text h3 {
@@ -680,10 +678,9 @@ font-size: 16px;
 .footer-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    gap: 45px;
 }
 
 .footer-nav a {
@@ -698,16 +695,23 @@ font-size: 16px;
     color: #ff6b35;
 }
 
-.footer-contact {
-    margin-top: 15px;
-}
 
 .footer-contact p {
     color: #b8d4f1;
     font-size: 14px;
     margin: 0;
 }
-
+.footer-nav {
+    position: relative;
+    top: 16px;
+    padding-left: 30px;
+}
+.footer-content p {
+    font-size: 14px;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-left: 30px;
+}
 .footer-right {
     flex: 1;
     text-align: right;
@@ -716,7 +720,7 @@ font-size: 16px;
 .social-links {
     display: flex;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 5px;
 }
 
 .social-links a img {
