@@ -108,55 +108,117 @@ body {
     overflow: hidden;
 }
 
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-content-wrapper {
     position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin-left: 40px;
+    max-width: 600px;
 }
 
 .hero-content {
-    text-align: center;
-    color: white;
+    color: #333;
 }
 
 .hero-content h1 {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+    color: #ff6b35;
 }
 
 .hero-content p {
     font-size: 24px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-weight: 500;
+    color: #333;
 }
 
 .hero-valves {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 40px;
+    align-items: center;
 }
 
 .hero-valves img {
-    width: 120px;
+    width: 100px;
     height: auto;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+}
+
+.hero-valves img:hover {
+    transform: scale(1.05);
+}
+
+.slider-controls {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.slider-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #ff6b35;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.slider-btn:hover {
+    background: #e55a2b;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.slider-btn:active {
+    transform: scale(0.95);
 }
 
 /* Products Section */
@@ -165,10 +227,21 @@ body {
     background: #f8f9fa;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.product-carousel {
+    position: relative;
+}
+
+.product-carousel .owl-stage-outer {
+    overflow: hidden;
+}
+
+.product-carousel .owl-stage {
+    display: flex !important;
+}
+
+.product-carousel .owl-item {
+    display: flex !important;
+    justify-content: center;
 }
 
 .product-card {
@@ -179,6 +252,9 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
 }
 
 .product-card:hover {
@@ -197,6 +273,82 @@ body {
     font-size: 18px;
     color: #333;
     font-weight: 500;
+}
+
+/* Owl Carousel Navigation */
+.product-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.product-carousel .owl-nav button {
+    width: 45px;
+    height: 45px;
+    background: #ff6b35 !important;
+    color: white !important;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    pointer-events: all;
+}
+
+.product-carousel .owl-nav button:hover {
+    background: #e55a2b !important;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.product-carousel .owl-nav button span {
+    font-size: 20px;
+    line-height: 45px;
+}
+
+/* Owl Carousel Dots */
+.product-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-carousel .owl-dots button {
+    width: 12px;
+    height: 12px;
+    background: #ddd !important;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.product-carousel .owl-dots button.active {
+    background: #ff6b35 !important;
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments for carousel */
+@media (max-width: 768px) {
+    .product-carousel .owl-nav {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .product-carousel .owl-nav button {
+        margin: 0 10px;
+    }
+    
+    .product-card {
+        margin: 0 10px;
+    }
 }
 
 /* Welcome Section */
@@ -425,6 +577,19 @@ body {
         gap: 10px;
     }
     
+    .hero-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .hero-overlay {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 40px 30px;
+        max-width: none;
+    }
+    
     .hero-content h1 {
         font-size: 36px;
     }
@@ -434,8 +599,26 @@ body {
     }
     
     .hero-valves {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        margin-right: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-valves img {
+        width: 80px;
+    }
+    
+    .slider-controls {
+        right: 10px;
+        gap: 10px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
     }
     
     .welcome-content {
@@ -455,8 +638,22 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero-overlay {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 30px 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
     .hero-valves img {
-        width: 80px;
+        width: 60px;
     }
     
     .welcome-text h2,
@@ -467,5 +664,16 @@ body {
     
     .product-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .slider-controls {
+        right: 5px;
+        gap: 8px;
+    }
+    
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
     }
 }

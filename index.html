@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -39,18 +42,60 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-slider">
-            <div class="hero-slide active" style="background-image: url('images/home-banner-cement-plant.jpg')">
-                <div class="hero-overlay">
-                    <div class="hero-content">
-                        <h1>VALNEXIS</h1>
-                        <p>Smart Engineering. Smart Valves.</p>
+        <div class="container">
+            <div class="hero-slider">
+                <div class="hero-slide active" data-bg="images/home-banner-cement-plant.jpg">
+                    <div class="hero-content-wrapper">
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <h1>VALNEXIS</h1>
+                                <p>Smart Engineering. Smart Valves.</p>
+                            </div>
+                        </div>
                         <div class="hero-valves">
                             <img src="images/1.png" alt="Valve 1">
                             <img src="images/2.png" alt="Valve 2">
                             <img src="images/3.png" alt="Valve 3">
                         </div>
                     </div>
+                </div>
+                <div class="hero-slide" data-bg="images/home-banner-oil-gas.jpg">
+                    <div class="hero-content-wrapper">
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <h1>VALNEXIS</h1>
+                                <p>Precision Engineering Solutions</p>
+                            </div>
+                        </div>
+                        <div class="hero-valves">
+                            <img src="images/4.png" alt="Valve 4">
+                            <img src="images/5.png" alt="Valve 5">
+                            <img src="images/6.png" alt="Valve 6">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide" data-bg="images/home-banner-plant.jpg">
+                    <div class="hero-content-wrapper">
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <h1>VALNEXIS</h1>
+                                <p>Industrial Valve Excellence</p>
+                            </div>
+                        </div>
+                        <div class="hero-valves">
+                            <img src="images/1.png" alt="Valve 1">
+                            <img src="images/3.png" alt="Valve 3">
+                            <img src="images/5.png" alt="Valve 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -59,7 +104,7 @@
     <!-- Products Section -->
     <section class="products">
         <div class="container">
-            <div class="product-grid">
+            <div class="product-carousel owl-carousel owl-theme">
                 <div class="product-card">
                     <img src="images/1.png" alt="Product 1">
                     <h3>Product Name</h3>
@@ -74,6 +119,14 @@
                 </div>
                 <div class="product-card">
                     <img src="images/4.png" alt="Product 4">
+                    <h3>Product Name</h3>
+                </div>
+                <div class="product-card">
+                    <img src="images/5.png" alt="Product 5">
+                    <h3>Product Name</h3>
+                </div>
+                <div class="product-card">
+                    <img src="images/6.png" alt="Product 6">
                     <h3>Product Name</h3>
                 </div>
             </div>
@@ -174,6 +227,11 @@
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>

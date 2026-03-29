@@ -1,6 +1,120 @@
-// Simple JavaScript for basic interactivity
+$(document).ready(function() {
+    // Initialize Owl Carousel for Products
+    $('.product-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        center: false,
+        slideBy: 1,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true,
+                stagePadding: 50
+            },
+            600: {
+                items: 2,
+                nav: true,
+                dots: true,
+                stagePadding: 40
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                dots: true,
+                stagePadding: 30
+            },
+            1200: {
+                items: 4,
+                nav: true,
+                dots: true,
+                stagePadding: 20
+            }
+        }
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Hero Slider Functionality
+    const slides = document.querySelectorAll('.hero-slide');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function initializeSlides() {
+        // Set background images for slides
+        slides.forEach((slide, index) => {
+            const bgImage = slide.getAttribute('data-bg');
+            if (bgImage) {
+                slide.style.backgroundImage = `url('${bgImage}')`;
+            }
+        });
+        
+        // Show first slide
+        showSlide(0);
+    }
+
+    function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => slide.classList.remove('active'));
+        
+        // Show current slide
+        slides[index].classList.add('active');
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoSlide() {
+        clearInterval(slideInterval);
+    }
+
+    // Event listeners for slider buttons
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoSlide();
+            startAutoSlide(); // Restart auto-slide after manual navigation
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoSlide();
+            startAutoSlide(); // Restart auto-slide after manual navigation
+        });
+    }
+
+    // Initialize slider
+    initializeSlides();
+    startAutoSlide();
+
+    // Pause auto-slide on hover
+    const heroSlider = document.querySelector('.hero-slider');
+    if (heroSlider) {
+        heroSlider.addEventListener('mouseenter', stopAutoSlide);
+        heroSlider.addEventListener('mouseleave', startAutoSlide);
+    }
+
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     
@@ -18,28 +132,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // Simple hero slider (if needed in future)
-    let currentSlide = 0;
-    const slides = [
-        'images/home-banner-cement-plant.jpg',
-        'images/home-banner-oil-gas.jpg',
-        'images/home-banner-plant.jpg',
-        'images/home-banner-powerplant.jpg',
-        'images/home-banner-refinery.jpg'
-    ];
-
-    // Optional: Auto-rotate hero background
-    function changeHeroBackground() {
-        const heroSlide = document.querySelector('.hero-slide');
-        if (heroSlide) {
-            currentSlide = (currentSlide + 1) % slides.length;
-            heroSlide.style.backgroundImage = `url('${slides[currentSlide]}')`;
-        }
-    }
-
-    // Uncomment below for auto-rotating hero background every 5 seconds
-    // setInterval(changeHeroBackground, 5000);
 
     // Add some animation on scroll
     const observerOptions = {
