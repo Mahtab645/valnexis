@@ -119,21 +119,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    z-index: -1;
 }
 
 .hero-slide.active {
     opacity: 1;
 }
 
-/* Fallback background for hero section */
+/* Remove fallback background - let images load */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: transparent;
 }
 
 .hero-content-wrapper {

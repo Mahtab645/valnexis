@@ -46,17 +46,28 @@ $(document).ready(function() {
     let slideInterval;
 
     function initializeSlides() {
-        // Set background images for slides
+        // Set background images for slides immediately
         slides.forEach((slide, index) => {
             const bgImage = slide.getAttribute('data-bg');
             if (bgImage) {
                 slide.style.backgroundImage = `url('${bgImage}')`;
+                slide.style.backgroundSize = 'cover';
+                slide.style.backgroundPosition = 'center';
+                slide.style.backgroundRepeat = 'no-repeat';
                 console.log(`Setting background for slide ${index}: ${bgImage}`);
             }
         });
         
-        // Show first slide
+        // Force first slide to show
         showSlide(0);
+        
+        // Double-check after a short delay
+        setTimeout(() => {
+            slides.forEach((slide, index) => {
+                const bgImage = slide.getAttribute('data-bg');
+                console.log(`Slide ${index} current background: ${slide.style.backgroundImage}`);
+            });
+        }, 100);
     }
 
     function showSlide(index) {
