@@ -135,9 +135,15 @@ img.logo_width {
 .nav-menu a.active::after {
     width: 80%;
 }
-
+a.brochure-btn {
+    color: #fff !important;
+}
+.brochure-btn::after {
+    display: none;
+}
 .brochure-btn {
-    background: #ff6b35;
+    background: url('images/but-brochure-bg.png') no-repeat center;
+    background-size: cover;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -145,12 +151,20 @@ img.logo_width {
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
-    transition: background 0.3s;
     text-transform: uppercase;
 }
 
-.brochure-btn:hover {
-    background: #ff6b35;
+.breower {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* Page Banner */
