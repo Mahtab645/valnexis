@@ -110,12 +110,29 @@ img.logo_width {
     text-transform: uppercase;
     padding: 8px 15px;
     border-radius: 5px;
+    position: relative;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
     color: #ff6b35;
-    background: rgba(255, 107, 53, 0.1);
+}
+
+.nav-menu a::after {
+   content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 5px;
+    background: #ff6b35;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 80%;
 }
 
 .brochure-btn {
