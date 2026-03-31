@@ -64,7 +64,10 @@ header.header .header-top .col-md-10 {
     padding: 17px 25px !important;
 }
 header.header {
-    padding-top: 10px;
+       padding-top: 10px;
+    background: #f3f5f4;
+    position: relative;
+    z-index: 9;
 }
 img.logo_width {
     width: 90px;
@@ -137,6 +140,7 @@ img.logo_width {
     position: relative;
     height: 600px;
     overflow: hidden;
+    background: #f3f5f4;
 }
 
 .hero .carousel {
@@ -146,11 +150,20 @@ img.logo_width {
 .hero .carousel-item {
     height: 600px;
     position: relative;
+        border-radius: 15px;
 }
 
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+      border-radius: 15px;
+}
 .hero .carousel-item img {
     width: 100%;
     height: 100%;
+        border-radius: 15px;
     object-fit: cover;
 }
 
@@ -245,35 +258,49 @@ img.logo_width {
 
 .carousel-control-prev,
 .carousel-control-next {
-   .carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%;
+   position: absolute;
+    top: 46%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background: rgb(233 129 36);
+    width: 35px;
+    height: 35px;
+    background: #ff6b35;
     border: none;
-    border-radius: 50%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
     opacity: 1 !important;
-}
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 .carousel-control-prev {
-    left: 90%;
+    left: 98.5%;
 }
 
 .carousel-control-next {
-    right: 20px;
+    right: -15px;
+    top: 54%;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background: transparent;
+    background: #e55a2b;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 13px;
+    height: 13px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5z"/></svg>') no-repeat center;
+    background-size: contain;
+}
+
+.carousel-control-next-icon {
+    transform: rotate(180deg);
 }
 .product-carousel {
     background: #fff;
