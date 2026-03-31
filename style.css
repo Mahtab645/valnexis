@@ -139,32 +139,32 @@ img.logo_width {
     overflow: hidden;
 }
 
-.hero-slider {
-    position: relative;
-    width: 100%;
+.hero .carousel {
     height: 100%;
 }
 
-.hero-slide {
+.hero .carousel-item {
+    height: 600px;
+    position: relative;
+}
+
+.hero .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .carousel-caption {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: -1;
-}
-
-.hero-slide.active {
-    opacity: 1;
-}
-
-/* Remove fallback background - let images load */
-.hero {
+    right: 0;
+    bottom: 0;
     background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .hero-content-wrapper {
@@ -239,41 +239,34 @@ img.logo_width {
     transform: scale(1.05);
 }
 
-.slider-controls {
+.carousel-control-prev,
+.carousel-control-next {
     position: absolute;
-    right: 20px;
-    top: 160%;
-    transform: translateY(160%);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 10;
-}
-
-.slider-btn {
+    top: 50%;
+    transform: translateY(-50%);
     width: 50px;
     height: 50px;
+    background: rgba(255, 255, 255, 0.8);
     border: none;
     border-radius: 50%;
-    background: #ff6b35;
-    color: white;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.slider-btn:hover {
-    background: #e55a2b;
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+.carousel-control-prev {
+    left: 20px;
 }
 
-.slider-btn:active {
-    transform: scale(0.95);
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(255, 107, 53, 0.8);
 }
 .product-carousel {
     background: #fff;
