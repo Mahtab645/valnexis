@@ -29,6 +29,7 @@ body {
 .val_heading {
     font-size: 16px;
     font-weight: 600;
+        color: #051f49;
 }
 .header-info p {
         color: #051f49;
@@ -149,7 +150,139 @@ img.logo_width {
 }
 
 .brochure-btn:hover {
-    background: #e55a2b;
+    background: #ff6b35;
+}
+
+/* Page Banner */
+.page-banner {
+    height: 300px;
+    background: linear-gradient(135deg, #1a365d 0%, #012e58 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    padding: 100px 0;
+    background: #f3f5f4;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.coming-soon-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.coming-soon-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a365d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.coming-soon-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.coming-soon-icon {
+    font-size: 80px;
+    color: #ff6b35;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-banner {
+        height: 250px;
+    }
+    
+    .banner-content h1 {
+        font-size: 36px;
+    }
+    
+    .coming-soon {
+        padding: 60px 0;
+    }
+    
+    .coming-soon-content h2 {
+        font-size: 36px;
+    }
+    
+    .coming-soon-content p {
+        font-size: 16px;
+    }
+    
+    .coming-soon-icon {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-banner {
+        height: 200px;
+    }
+    
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    
+    .coming-soon-content h2 {
+        font-size: 28px;
+    }
+    
+    .coming-soon-icon {
+        font-size: 50px;
+    }
 }
 
 /* Hero Section */
@@ -439,6 +572,7 @@ section.products .owl-nav {
     font-size: 18px;
     text-align: center;
     padding-top: 15px;
+    font-weight: 600;
 }
 .product-card img {
     width: 100%;

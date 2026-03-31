@@ -42,7 +42,7 @@
 
 
                          <div class="col-7 text-end">
-                              <p>© Copyright 2026. All rights reserved, | Powered by Maptek</p>
+                              <p>© Copyright 2026. All rights reserved, | Powered by <a href="https://maptek.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Maptek</a></p>
                           </div>
 
                       </div>

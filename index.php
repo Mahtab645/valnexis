@@ -181,7 +181,7 @@ include 'header.php';
             <div class="section-heading welcome_heading">
                 <h2>Welcome to Valnexis Engineering</h2>
             </div>
-            <div class="row align-items-center">
+            <div class="row ">
                 <div class="col-lg-6 col-md-12">
                     <div class="welcome-image">
                         <img src="images/6.png" alt="Valnexis Valve" class="img-fluid">

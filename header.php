@@ -55,11 +55,11 @@ session_start();
                                 <nav class="navbar bg-light rounded-3 cutom_header">
                                    
                                                 <ul class="nav-menu d-flex justify-content-center">
-                                                    <li><a href="#" class="active">HOME</a></li>
-                                                    <li><a href="#">VALNEXIS</a></li>
-                                                    <li><a href="#">PRODUCTS</a></li>
-                                                    <li><a href="#">SERVICES</a></li>
-                                                    <li><a href="#">CONTACT US</a></li>
+                                                    <li><a href="index.php" <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'class="active"' : ''; ?>>HOME</a></li>
+                                                    <li><a href="valnexis.php" <?php echo basename($_SERVER['PHP_SELF']) == 'valnexis.php' ? 'class="active"' : ''; ?>>VALNEXIS</a></li>
+                                                    <li><a href="products.php" <?php echo basename($_SERVER['PHP_SELF']) == 'products.php' ? 'class="active"' : ''; ?>>PRODUCTS</a></li>
+                                                    <li><a href="services.php" <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'class="active"' : ''; ?>>SERVICES</a></li>
+                                                    <li><a href="contact.php" <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'class="active"' : ''; ?>>CONTACT US</a></li>
                                                  </ul>
 
                                                  <ul class="nav-menu d-flex justify-content-center">
