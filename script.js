@@ -7,7 +7,7 @@ $(document).ready(function() {
         dots: true,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplayHoverPause: true,
+        autoplayHoverPause: true,  
         center: false,
         slideBy: 1,
         responsive: {
