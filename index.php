@@ -17,7 +17,7 @@ include 'header.php';
                                           
                                             <h1>VALNEXIS</h1>
                                         </div>
-                                        <p>Smart Engineering. Smart Valves.</p>
+                                        <p>Smart Engineering. <br>Smart Valves.</p>
                                     </div>
                                     <div class="hero-valves">
                                     <img src="images/6.png" alt="Valve 1">
@@ -37,7 +37,7 @@ include 'header.php';
                                           
                                             <h1>VALNEXIS</h1>
                                         </div>
-                                        <p>Smart Engineering. Smart Valves.</p>
+                                        <p>Smart Engineering. <br>Smart Valves.</p>
                                     </div>
                                      <div class="hero-valves">
                                     <img src="images/6.png" alt="Valve 4">
@@ -57,7 +57,7 @@ include 'header.php';
                                            
                                             <h1>VALNEXIS</h1>
                                         </div>
-                                        <p>Smart Engineering. Smart Valves.</p>
+                                        <p>Smart Engineering. <br>Smart Valves.</p>
                                     </div>
                                      <div class="hero-valves">
                                     <img src="images/6.png" alt="Valve 5">
@@ -77,7 +77,7 @@ include 'header.php';
                                             
                                             <h1>VALNEXIS</h1>
                                         </div>
-                                        <p>Smart Engineering. Smart Valves.</p>
+                                        <p>Smart Engineering. <br>Smart Valves.</p>
                                     </div>
                                      <div class="hero-valves">
                                     <img src="images/6.png" alt="Valve 2">
@@ -97,7 +97,7 @@ include 'header.php';
                                            
                                             <h1>VALNEXIS</h1>
                                         </div>
-                                        <p>Smart Engineering. Smart Valves.</p>
+                                        <p>Smart Engineering. <br>Smart Valves.</p>
                                     </div>
                                      <div class="hero-valves">
                                     <img src="images/6.png" alt="Valve 4">
@@ -181,7 +181,7 @@ include 'header.php';
             <div class="section-heading welcome_heading">
                 <h2>Welcome to Valnexis Engineering</h2>
             </div>
-            <div class="row ">
+            <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="welcome-image">
                         <img src="images/6.png" alt="Valnexis Valve" class="img-fluid">

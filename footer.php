@@ -42,7 +42,7 @@
 
 
                          <div class="col-7 text-end">
-                              <p>© Copyright 2026. All rights reserved, | Powered by <a href="https://maptek.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Maptek</a></p>
+                              <p >© Copyright 2026. All rights reserved, | Powered by <a href="https://maptek.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Maptek</a></p>
                           </div>
 
                       </div>
@@ -66,5 +66,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom Script -->
     <script src="js/script.js"></script>
+
+    <div class="whatsapp">
+     <a href="https://api.whatsapp.com/send?phone=090827 83860" target="_blank" title="Contact Us">
+         <img class="hvr-bounce-in" src="images/whatsap.png" style="width: 46px;" title="Contact Us">
+     </a>
+ </div>
 </body>
 </html>
