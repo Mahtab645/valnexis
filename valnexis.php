@@ -10,7 +10,7 @@
 </section>
 
 <!-- About Us Section -->
-<section class="welcome">
+<section class="welcome about_pages">
         <div class="container">
            
             <div class="row align-items-center">

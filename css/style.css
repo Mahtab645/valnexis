@@ -363,7 +363,7 @@ a.brochure-btn {
 /* Page Banner */
 .page-banner {
     height: 300px;
-    background: linear-gradient(135deg, #1a365d 0%, #012e58 100%);
+    background: #000;
     display: flex;
     align-items: center;
     position: relative;
@@ -377,9 +377,29 @@ a.brochure-btn {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.3;
+    background: url('../images/inner_banner.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: 0;
 }
+
+.page-banner h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.page-banner .banner-content {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
 
 .banner-content {
     position: relative;
@@ -443,6 +463,10 @@ a.brochure-btn {
    animation: zoomInOut 2s infinite ease-in-out;
             transform-origin: center;
             width: 46px;
+}
+.welcome.about_pages {
+    padding-top: 70px;
+    padding-bottom: 70px !important;
 }
 @keyframes zoomInOut {
     0% { transform: scale(1); }
