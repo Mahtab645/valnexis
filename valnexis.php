@@ -16,7 +16,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="welcome-image">
-                        <img src="images/6.png" alt="Valnexis Valve" class="img-fluid">
+                        <img class="hvr-bounce-in" src="images/6.png" alt="Valnexis Valve" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">

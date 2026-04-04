@@ -184,7 +184,7 @@ include 'header.php';
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="welcome-image">
-                        <img src="images/6.png" alt="Valnexis Valve" class="img-fluid">
+                        <img class="hvr-bounce-in" src="images/6.png" alt="Valnexis Valve" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -205,27 +205,27 @@ include 'header.php';
                 <h2>Why Valnexis Valves</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 col-6">
                     <div class="feature-card">
-                        <img src="images/customer-first.png" alt="Customer First" class="img-fluid">
+                        <img class="hvr-bounce-in" src="images/customer-first.png" alt="Customer First" class="img-fluid">
                         <h3>Customer First</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 col-6">
                     <div class="feature-card">
-                        <img src="images/quality-products.png" alt="Quality Products" class="img-fluid">
+                        <img class="hvr-bounce-in" src="images/quality-products.png" alt="Quality Products" class="img-fluid">
                         <h3>Quality Products</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 col-6">
                     <div class="feature-card">
-                        <img src="images/professional-team.png" alt="Professional Team" class="img-fluid">
+                        <img class="hvr-bounce-in" src="images/professional-team.png" alt="Professional Team" class="img-fluid">
                         <h3>Professional Team</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 col-6">
                     <div class="feature-card">
-                        <img src="images/on-time-delivery.png" alt="On-time Delivery" class="img-fluid">
+                        <img class="hvr-bounce-in" src="images/on-time-delivery.png" alt="On-time Delivery" class="img-fluid">
                         <h3>On-time Delivery</h3>
                     </div>
                 </div>

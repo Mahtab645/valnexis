@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Initialize Owl Carousel for Products
     $('.product-carousel').owlCarousel({
         loop: true,
@@ -98,6 +98,51 @@ $(document).ready(function() {
         readMoreBtn.addEventListener('click', function() {
             // You can add navigation to about page or expand content here
             alert('Read more functionality would navigate to about page or expand content');
+        });
+    }
+
+    // Mobile menu toggle
+    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+    const mobileSidebar = document.querySelector('.mobile-sidebar');
+    const closeSidebar = document.querySelector('.close-sidebar');
+
+    if (mobileMenuIcon && mobileSidebar) {
+        // Add event listener to the div
+        mobileMenuIcon.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            mobileSidebar.classList.add('open');
+        });
+        
+        // Also add to the i element inside
+        const iconElement = mobileMenuIcon.querySelector('i');
+        if (iconElement) {
+            iconElement.addEventListener('click', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                mobileSidebar.classList.add('open');
+            });
+        }
+
+        if (closeSidebar) {
+            closeSidebar.addEventListener('click', function() {
+                mobileSidebar.classList.remove('open');
+            });
+        }
+
+        // Close sidebar when clicking on a menu link
+        const sidebarLinks = document.querySelectorAll('.sidebar-menu a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileSidebar.classList.remove('open');
+            });
+        });
+
+        // Close sidebar when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileSidebar.contains(event.target) && !mobileMenuIcon.contains(event.target)) {
+                mobileSidebar.classList.remove('open');
+            }
         });
     }
 });

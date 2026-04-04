@@ -18,12 +18,12 @@
             <!-- Service 1 - Left Content, Right Image -->
             <div class="service-item">
                 <div class="row align-items-center">
-                     <div class="col-lg-6 col-md-12">
+                     <div class="col-lg-6 col-md-12 order-md-1 order-2">
                         <div class="service-image">
-                            <img src="images/6.png" alt="Valve Manufacturing" class="img-fluid">
+                            <img src="images/6.png" class="hvr-bounce-in" alt="Valve Manufacturing" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 ps-5">
+                    <div class="col-lg-6 col-md-12 ps-md-5 order-md-2 order-1">
                         <div class="service-content">
                             <h3>Valve Manufacturing</h3>
                             <p>We specialize in manufacturing high-quality industrial valves designed for precision and durability. Our valves meet international standards and are suitable for various industrial applications including oil & gas, power plants, and chemical processing.</p>
@@ -55,7 +55,7 @@
             <!-- Service 2 - Right Content, Left Image -->
             <div class="service-item ">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 order-lg-1 pe-5">
+                    <div class="col-lg-6 col-md-12 order-lg-1 pe-md-5">
                         <div class="service-content">
                             <h3>Engineering Solutions</h3>
                             <p>Comprehensive engineering services tailored to meet your specific industrial requirements. Our team of experts provides innovative solutions for complex engineering challenges with focus on efficiency and reliability.</p>
@@ -69,7 +69,7 @@
                     </div>
                      <div class="col-lg-6 col-md-12 order-lg-2">
                         <div class="service-image">
-                            <img src="images/6.png" alt="Engineering Solutions" class="img-fluid">
+                            <img src="images/6.png" class="hvr-bounce-in" alt="Engineering Solutions" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -90,12 +90,12 @@
             <!-- Service 1 - Left Content, Right Image -->
             <div class="service-item">
                 <div class="row align-items-center">
-                     <div class="col-lg-6 col-md-12">
+                     <div class="col-lg-6 col-md-12 order-md-1 order-2">
                         <div class="service-image">
-                            <img src="images/6.png" alt="Valve Manufacturing" class="img-fluid">
+                            <img src="images/6.png" class="hvr-bounce-in" alt="Valve Manufacturing" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 ps-5">
+                    <div class="col-lg-6 col-md-12 ps-md-5">
                         <div class="service-content">
                             <h3>Valve Manufacturing</h3>
                             <p>We specialize in manufacturing high-quality industrial valves designed for precision and durability. Our valves meet international standards and are suitable for various industrial applications including oil & gas, power plants, and chemical processing.</p>

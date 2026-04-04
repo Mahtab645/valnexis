@@ -18,7 +18,7 @@
                 <!-- Contact Details -->
                 <div class="col-lg-5 col-md-12">
                     <div class="contact-info">
-                        <h3 class="pb-4">Contact Information</h3>
+                        <h3 class="pb-md-4 pb-2">Contact Information</h3>
                        
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -57,7 +57,7 @@
                 </div>
                 
                 <!-- Map -->
-                <div class="col-lg-7 col-md-12 ps-5">
+                <div class="col-lg-7 col-md-12 ps-md-5 mt-md-0 mt-4">
                     <div class="map-container">
                         <div class="map-wrapper">
                             <iframe 

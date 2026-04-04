@@ -14,7 +14,8 @@ session_start();
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/style.css?v=1.2">
+    <link rel="stylesheet" href="css/hover.css?v=1.2">
     <!-- Poppins Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -78,6 +79,28 @@ session_start();
                     
                    
                 </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Icon -->
+        <div class="mobile-menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <!-- Mobile Sidebar -->
+        <div class="mobile-sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <span class="close-sidebar">&times;</span>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="index.php" <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'class="active"' : ''; ?>>HOME</a></li>
+                    <li><a href="valnexis.php" <?php echo basename($_SERVER['PHP_SELF']) == 'valnexis.php' ? 'class="active"' : ''; ?>>VALNEXIS</a></li>
+                    <li><a href="products.php" <?php echo basename($_SERVER['PHP_SELF']) == 'products.php' ? 'class="active"' : ''; ?>>PRODUCTS</a></li>
+                    <li><a href="services.php" <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'class="active"' : ''; ?>>SERVICES</a></li>
+                    <li><a href="contact.php" <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'class="active"' : ''; ?>>CONTACT US</a></li>
+                    <li><a href="#" class="brochure-btn">BROCHURE</a></li>
+                </ul>
             </div>
         </div>
         
