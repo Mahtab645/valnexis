@@ -6,8 +6,9 @@
                     
                     <div class="col-lg-3 col-md-12">
                         <div class="footer-logo">
-                            <img src="images/logo.png" alt="Valnexis Logo" class="img-fluid mb-3">
-                            
+                        <a href="/index.php">    
+                        <img src="images/logo.png" alt="Valnexis Logo" class="img-fluid mb-3">
+</a>  
                         </div>
                     </div>
 

@@ -191,7 +191,12 @@ include 'header.php';
                     <div class="welcome-text">
                        
                         <p>Valnexis is a family-owned enterprise with over 25 years of expertise in manufacturing valves and engineering products. The company is led by seasoned professionals with more than two decades of experience in the engineering industry. Headquartered in Mumbai, the financial capital of India, Valnexis benefits from its strategic location and strong industry presence. As a trusted partner to renowned OEMs and first-tier suppliers, the company continues to deliver precision, reliability, and innovation in engineering solutions.</p>
-                        <button class="read-more-btn">READ MORE</button>
+                       
+                        <div class="btn-card">
+      <a href="/valnexis.php" class="btn btn-fill"><span>READ MORE</span></a>
+    </div>
+
+
                     </div>
                 </div>
             </div>
