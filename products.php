@@ -39,7 +39,7 @@
     </div>
 </section>
 
-<section class="services-section bg_gray">
+<section class="services-section bg_gray rightSection">
     <div class="container">
         <div class="services-content">
             <!-- Product 2 - Right Image, Left Content -->
@@ -97,7 +97,7 @@
     </div>
 </section>
 
-<section class="services-section bg_gray">
+<section class="services-section bg_gray rightSection">
     <div class="container">
         <div class="services-content">
             <!-- Product 4 - Right Image, Left Content -->
@@ -155,7 +155,7 @@
     </div>
 </section>
 
-<section class="services-section bg_gray">
+<section class="services-section bg_gray rightSection">
     <div class="container">
         <div class="services-content">
             <!-- Product 4 - Right Image, Left Content -->
@@ -214,7 +214,7 @@
     </div>
 </section>
 
-<section class="services-section bg_gray">
+<section class="services-section bg_gray rightSection">
     <div class="container">
         <div class="services-content">
             <!-- Product 4 - Right Image, Left Content -->

@@ -37,12 +37,14 @@
                          <div class="col-lg-5 col-md-12">
                             <div class="footer-contact">
                                 <p>Call: 090827 83860 | Email: sales@valnexis.in</p>
+
+                                 <p class="copyrghts">© Copyright 2026. All rights reserved.</p>
                             </div>
                         </div>
 
 
                          <div class="col-12 col-md-7 text-end">
-                              <p >© Copyright 2026. All rights reserved, | Powered by <a href="https://maptek.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Maptek</a></p>
+                              <p class="powered">Powered by <a href="https://maptek.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Maptek</a></p>
                           </div>
 
                       </div>

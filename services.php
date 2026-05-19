@@ -45,7 +45,7 @@
 </section>
 
 
-<section class="services-section bg_gray">
+<section class="services-section bg_gray rightSection">
     <div class="container">
         
         
